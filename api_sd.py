@@ -14,8 +14,8 @@ def img2img(mes, src):
     encoded_image = base64.b64encode(image_data).decode('utf-8')
     payload = {
         "init_images": [encoded_image],
-        "prompt": "",
-        "negative_prompt": "",
+        "prompt": "naked body, nude breasts, nude legs, <lora:Breasts_Helper_Trail_v2:0.59> , torpedo_breast, (medium breast), nude pussy, (naked belly)",
+        "negative_prompt": "deformed, bad anatomy, disfigured, poorly drawn face, mutation, mutated, extra limb, ugly, poorly drawn hands, missing limb, floating limbs, disconnected limbs, malformed hands, out of focus, long neck, long body, monochrome, feet out of view, head out of view, lowres, ((bad anatomy)), bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, jpeg artifacts, signature, watermark, username, blurry, artist name, extra limb, poorly drawn eyes, (out of frame), black and white, obese, censored, bad legs, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, (extra legs), (poorly drawn eyes), without hands, bad knees, multiple shoulders, bad neck, ((no head)), belly button piercing, tattoo, (clothes, pants, belt, textile)",
         "steps": 20,
         "width": 800,
         "height": 800,
@@ -26,8 +26,8 @@ def img2img(mes, src):
         "cfg_scale": 7,
         "script_name": "txt2mask v0.1.1",
         "script_args": [
-            '',
-            '',
+            'body',
+            'head, hand, face, stomach, hair',
             100,
             60,
             False,
