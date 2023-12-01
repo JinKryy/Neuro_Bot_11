@@ -33,7 +33,7 @@ def start(message):
 
     #Создание кнопок меню
     markup = types.InlineKeyboardMarkup()
-    item1 = types.InlineKeyboardButton('❤️‍🔥 Раздеть девушку', callback_data='undress', row_width=1)
+    item1 = types.InlineKeyboardButton('❤️‍🔥 Обработать фото', callback_data='undress', row_width=1)
     item2 = types.InlineKeyboardButton('💰 Пополнить', callback_data='money', row_width=2)
     item3 = types.InlineKeyboardButton('📝 Политика конфиденциальности', callback_data='police', row_width=2)
     item4 = types.InlineKeyboardButton('✉ Поддержка', callback_data='support', row_width=2)
